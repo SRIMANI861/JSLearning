@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- action="url" specifies the URL to which the form data will be sent on submitting the form -->
+    <!-- GET method is used for requesting the data from the specified resource
+         the data will be appended to the URL as a query string when the form is submitted.-->
+    <!--<div> tag is a versatile container that allows developers to structure, group, and style content within an HTML document.  -->
+    <div id="error"></div>
+    <form id = "form" action="/" method="GET">  
+    <div>
+        <label for="name">Username</label>
+        <input type="text" id="name" name="name"></input>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"></input>
+    </div>
+    <div class="submit">
+        <button type="submit">Submit</button>
+    </div>
+
+    </form>
+</body>
+</html>
