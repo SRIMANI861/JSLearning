@@ -1,0 +1,73 @@
+.container header img{
+    padding-right: 15px;
+    float: left;
+    display: flex;
+}
+header h1{
+    font-weight: bolder;
+}
+
+.form-control .form-input1{
+    height: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+button[type=submit]{
+    height: 3vw;
+    width: 10vw;
+    background-color: darkslateblue;
+    color: white;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.form-control .form-input2{
+    height: 20px;
+    width: 250px;
+    border: none;
+}
+
+#item-list li{
+    color: black;
+    border: 1px solid black;
+    -webkit-text-stroke-width: 1px; 
+    display: flex;
+    padding-left: 4px;
+    align-items: center;
+    align-items: center;    
+    justify-content:space-between;
+
+    /* -webkit-text-stroke-color: black;   */
+}
+.fruits-list li{
+    margin-bottom: 10px;
+    flex-grow: 3;
+}
+
+ul li{
+    height: 30px;
+    width: 150px;
+    
+}
+button[type = reset] {
+    color: red;
+    display: flex;
+    cursor: pointer;
+} 
+.remove-button {
+    display: flex;
+    flex-flow: row wrap;
+    height: 20px;
+    width: 25px;
+    background-color: white;
+    border: 0px;
+    margin-top: 2.5px;
+    float: right;
+}
+
+
+div .clearAll{
+    color: black;
+    font-weight: bold;
+}

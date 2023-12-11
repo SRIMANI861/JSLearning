@@ -8,6 +8,7 @@ const colorObj = {
 };
 
 for (const key in colorObj) {
+    // console.log(key);
     console.log(colorObj[key]);
 }
 

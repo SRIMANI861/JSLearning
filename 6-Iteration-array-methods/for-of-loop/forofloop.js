@@ -1,7 +1,7 @@
 //Loop through arrays
 const items = ['book','table','chair','kite'];
-const users = [
-    {name:'Siri'},{name:'Srimani'},{name:'Mittu'}];
+const users = [ {name:'Siri'},{name:'Srimani'},{name:'Mittu'}];
+
 for(const item of items){
     console.log(item);
 }
@@ -22,5 +22,5 @@ map.set('Wife\'s name','Regina');
 map.set('Husband\'s name','John');
 
 for(const [key,value] of map){
-    console.log(key,value);
+    console.log(key +" "+ "is "+" "+value);
 }
