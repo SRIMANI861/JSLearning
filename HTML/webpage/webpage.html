@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="icon" type="image/jpg" href="./perf_logo.png" aria-label="Perficient logo in header"> -->
+    <link rel="stylesheet" href="webpage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="Validation.js" defer></script>
+</head>
+<body>
+<div class="division" id="blur">
+    <header>
+        
+        <img src="./perf_logo.png" alt="perficient logo" aria-label="Perficient logo in header" style="height: 5em; width: 10em;">
+        <nav>
+            <ul>
+                <li> <a href="#" tabindex="1" aria-label="Navigate to Home">Home</a> </li> 
+                <li><a href="#" tabindex="2" aria-label="Navigate to About us">About us</a></li>
+                <li> 
+                    <a href="#" tabindex="3"  class="dropdown" aria-label="Navigate to Your career">Your career</a>
+                    <ul class="dropdown-content" role="menu" aria-labelledby="menu1">
+                        <li><a href="#" tabindex="4" aria-label="Navigate to Career Paths">Career Paths</a></li>
+                        <li><a href="#" tabindex="5" aria-label="Navigate to Job Openings">Job Openings</a></li>
+                    </ul>
+                </li>
+             </ul>
+        </nav>     
+     <div class="Image">
+            <img src="perf_people.jpg" alt="perficient people" aria-label="people in perficient image" style="height:100%;width: 200%;">
+            <div id="div1">
+                <h1 id="perfTitle" aria-label="Perficient Title">Inclusive Progress</h1>
+                <h2 id="Content title" aria-label="Content Title">Voice is Heard</h2>
+                <p id="content" aria-label="content">We believe in developing a workforce that is as diverse and inclusive as the clients we work with. Together, we’re constantly pursuing progress, and we’re committed to actively listening, learning, and acting, to further advance our organization, our communities and our future leaders, always driving towards a diverse environment of inclusion and belonging.</p><br>
+                <h2 id="content title 2" aria-label="Content Title 2">Corporate Responsibility and Culture</h2>
+                <p id="content2" aria-label="content2">Perficient is committed to integrating diverse social, environmental, and ethical practices into our day-to-day business operations and broader risk management strategy. Perficient demonstrates this commitment through transparent, consistent corporate governance and disclosure practices, which are overseen by Perficient’s Nominating, Governance and Sustainability Committee of the Board and validated by senior management, and by creating meaningful opportunities for colleagues to engage directly with one another and their communities.</p>
+            </div>
+            
+    </div>
+    </header>
+<main>
+    <div class="container">
+        <form action="index.html" class="form" id="form" aria-label="form">
+            <div class="header">
+                 <h2 aria-label="form heading">Product Request Form</h2>
+            </div>
+            <div class="field">
+               <label for="title" class="required" aria-label="Enter your title"><b>Name</b></label>
+                      <br>
+                     <select name="title" id="title" tabindex="6">
+                         <option value="">Title</option>
+                         <option value="mr.">Mr.</option>
+                         <option value="miss">Miss.</option>
+                     </select>    
+                 
+           </div> 
+
+           <div class="field">
+                <label for="fname" aria-label="Enter your First Name">First Name</label>
+                     <input type="text" name="fname" class="text-input" id="fname" tabindex="7" placeholder="First" >
+                     <span class="material-icons success tabindex="0">check_circle</span>
+                     <span class="material-icons error tabindex="0">error</span>                 
+                 <small>Error Message</small>
+           </div>
+
+           <div class="field">
+                <label for="lname" aria-label="Enter your Last Name">Last Name</label>
+                     <input type="text" name="lname"  class="text-input" id="lname" tabindex="8" placeholder="Last" ><br><br>
+                     <span class="material-icons success tabindex="0">check_circle</span>                 
+                     <span class="material-icons error tabindex="0">error</span>
+                 <small>Error Message</small>
+           </div>
+
+           <div class="field"> 
+                <label for="email" class="required" aria-label="Enter your Email address"><b>Email address</b></label><br>
+                     <input name="email" id="email" tabindex="9"><br><br>
+                 
+                     <span class="material-icons success tabindex="0">check_circle</span>                 
+                     <span class="material-icons error tabindex="0">error</span>
+                 <small>Error Message</small>
+           </div>
+
+           <div class="field">
+                <label for="phone" class="required" aria-label="Enter your Phone Number"><b>Phone Number</b></label>
+                     <br>
+                     <input type="tel" name="phone"  id="phone" maxlength="10" pattern="[6-9]{1}[0-9]{9}" tabindex="10" placeholder="Ex: 9861232320"><br>
+                 <br>
+                 <span class="material-icons success tabindex="0">check_circle</span>                 
+                 <span class="material-icons error tabindex="0">error</span>
+                 <small>Error Message</small>
+            </div>
+
+            <div class="field">
+                <label for="country" aria-label="Select your Country"><b>Country</b></label><br>
+                     <select name="country" id="country" tabindex="11">
+                         <option value="India">India</option>
+                         <option value="US">US</option>
+                         <option value="Italy">Italy</option>
+                         <option value="China">China</option>
+                         <option value="Germany">Japan</option>
+                     </select>
+                 
+                     <span class="material-icons success tabindex="0">check_circle</span>                 
+                     <span class="material-icons error tabindex="0">error</span>
+                 <small>Error Message</small>
+                 <br><br>
+            </div>     
+
+            <div class="field">
+                <label for="zipcode" class="required" aria-label="Enter your Zipcode"><b>Zipcode</b></label>
+                     <br>
+                     <input type="text" name="zipcode" id="zipcode" maxlength="5" tabindex="12">
+                 
+                     <span class="material-icons success tabindex="0">check_circle</span>                 
+                     <span class="material-icons error tabindex="0">error</span>
+                 <small>Error Message</small><br><br>
+             </div>
+
+             <div class="field">
+                <label for="comments" aria-label="Enter your Feedback or Inquiry"><b>Feedback/Inquiry</b></label>
+                     <br>
+                     <textarea name="comments" id="comments" cols="20" rows="4" tabindex="13" placeholder="please enter your comments"></textarea>
+                     <span class="material-icons success tabindex="0">check_circle</span>                 
+                     <span class="material-icons error tabindex="0">error</span>
+                     <small>Error Message</small><br><br>
+             </div>
+
+             <div class="field">
+                <input type="checkbox" name="terms" id="terms" tabindex="14" aria-labelledby="termsLabel">
+                 <label for="terms" id="termsLabel" class="required" aria-label="Check for terms and conditions">I agree to terms and conditions</label>
+                     <span class="material-icons success tabindex="0">check_circle</span>                 
+                     <span class="material-icons error tabindex="0">error</span>                 
+                     <small>Error Message</small>
+                 <br><br>
+             </div>
+             <button type="button" class="btn" aria-label="Submit" onclick="validate()" tabindex="15">Submit</button>
+                
+            </form>
+     
+        </div>
+    </main>
+     <div>
+     <footer>
+    <div class="foot">
+        <img src="./perf_logo.png" alt="perficient Logo" aria-label="Perficient logo in footer">
+        <div id="footer1">
+            
+            <ul>
+                <li><h3 id="gettoknowus" aria-label="Get to know us heading">GET TO KNOW US</h3></li>
+                <li><a href="#" aria-label="Navigate to Who We Are">Who We Are</a></li>
+                <li><a href="#" aria-label="Navigate to What We Do">What We Do</a></li>
+                <li><a href="#" aria-label="Navigate to Insights">Insights</a></li>
+                <li><a href="#" aria-label="Navigate to Careers">Careers</a></li>
+                <li><a href="#" aria-label="Navigate to Investors">Investors</a></li>
+                <li><a href="#" aria-label="Navigate to News Room">News Room</a></li>
+                <li><a href="#" aria-label="Navigate to Contact">Contact</a></li>
+            </ul>     
+        </div>
+        <div id="footer2">
+                <ul>
+                    <li><h3 id="Explore industries" aria-label="Explore industries heading">EXPLORE INDUSTRIES</h3>
+                    </li>
+                    <li><a href="#" aria-label="Navigate to Health Care">Health Care</a></li>
+                    <li><a href="#" aria-label="Navigate to Insurance">Insurance</a></li>
+                    <li><a href="#" aria-label="Navigate to Life Sciences">Life Sciences</a></li>
+                    <li><a href="#" aria-label="Navigate to Manufacturing">Manufacturing</a></li>
+                    <li><a href="#" aria-label="Navigate to Financial Services">Financial Services</a></li>
+                </ul>          
+        </div>
+        <div id="footer3">
+            
+                <ul>
+                    <li><h3 id="functions" aria-label="Functions heading">FUNCTIONS</h3></li>
+                    <li><a href="#" aria-label="Navigate to Commerce">Commerce</a></li>
+                    <li><a href="#" aria-label="Navigate to Contact Center">Contact Center</a></li>
+                    <li><a href="#" aria-label="Navigate to Finance">Finance</a></li>
+                    <li><a href="#" aria-label="Navigate to Supply Chain">Supply Chain</a></li>
+                </ul>   
+        </div>
+    </div>
+
+    <div id="items">
+        <ul>
+            <li><a href="#" aria-label="Navigate to Terms and conditions">Terms & conditions</a> </li> 
+            <li><a href="#" aria-label="Navigate to Privacy policy">Privacy policy</a></li>
+            <li aria-label="Navigate to copy rights">&copy; copy rights reserved</li>
+        </ul>
+    </div>
+
+     </footer>
+    </div>
+</div>
+<div class="popup" id="popup">
+    <img src="tickmark.png" role="img" alt="tickmark" id="tickmark" aria-label="tickmark image">
+    <h2 id="popupTitle" aria-label="Popup Title">Thank you!</h2>
+    <p aria-label="Popup Message">Successfully submitted the form.</p>
+    <span class="material-icons" id="cancel" onclick="validate()" tabindex="16" aria-label="Close Popup">cancel</span>               
+</div>
+
+</body>
+</html>
