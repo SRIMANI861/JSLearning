@@ -197,8 +197,8 @@ function setTabindex(enable){
 function openPopup(){
     isPopupOpen = true;
     popup.classList.add("open-popup");    
-    blur.classList.toggle('active');
-    popup.classList.toggle('active');
+    blur.classList.add('active');
+    popup.classList.add('active');
     setTabindex(true);
 }
 
@@ -209,6 +209,8 @@ function closePopup(){
                 popup.classList.remove("open-popup");
                 setTabindex(false);
             }
+        blur.classList.remove('active');
+        popup.classList.remove('active');
         console.log("clicked x icon");
 }
 
@@ -218,22 +220,43 @@ function setFocusToCloseButton(){
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Get the Your Career dropdown menu and its content
-    var yourCareerMenu = document.querySelector('.dropdown');
+    var CareerMenu = document.querySelector('.dropdown');
     var dropdownContent = document.querySelector('.dropdown-content');
     var formElements = document.querySelectorAll('.form input, .form select, .form textarea, .form button');
+    var closebutton = document.getElementById('cancel');
+
+    //Add eventlistener to the document to close popup on escape
+    document.addEventListener('keydown',(event)=>{
+        if (event.key==='Escape') {
+            closePopup();
+        }
+    })
+
+    //Add eventlistener to the close button to close popup on enter on the close button
+    closebutton.addEventListener('keypress',function(event){
+        if (event.key === 'Enter') {
+            closePopup();
+        }
+    });
+
 
     // Add focus and blur event listeners to toggle visibility
-    yourCareerMenu.addEventListener('focus', function () {
+    CareerMenu.addEventListener('focus', function () {
         dropdownContent.style.display = 'block';
     });
 
+    //It will add the focus to the elements inside the dropdown
+    dropdownContent.addEventListener('focus',function(){
+        dropdownContent.style.display = 'block';
+    })
+
+    //It will remove the focus from the dropdown when focus is shifter to other elements 
     dropdownContent.addEventListener('blur',function(){
         dropdownContent.style.display = 'none';
     })
 
     // Add mouse enter and leave event listeners to keep dropdown visible when mouse is over it
-    yourCareerMenu.addEventListener('mouseenter', function () {
+    CareerMenu.addEventListener('mouseenter', function () {
         dropdownContent.style.display = 'block';
     });
 
@@ -241,9 +264,9 @@ document.addEventListener('DOMContentLoaded', function () {
         dropdownContent.style.display = 'none';
     });
 
+    //When shifting the focus from the dropdown to the form element, the dropdown should be closed
     formElements.forEach(function (element) {
         element.addEventListener('focus', function () {
-            // Close the dropdown
             dropdownContent.style.display = 'none';
         });
     });
@@ -254,14 +277,6 @@ document.addEventListener('DOMContentLoaded', function () {
             dropdownContent.style.display='none';
         }
     });
+
 });
-
-
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    closePopup();
-  }
-});
-
 
