@@ -10,7 +10,7 @@
     <!-- <script type="text/javascript" src="Validation.js" defer></script> -->
 </head>
 <body>
-<div class="division" id="blur">
+<div class="division" id="blur" aria-label="main division">
     <header>
         
         <img src="./perf_logo.png" alt="perficient logo" aria-label="Perficient logo in header" style="height: 5em; width: 10em;">
@@ -18,7 +18,7 @@
             <ul>
                 <li> <a href="#" tabindex="1" aria-label="Navigate to Home">Home</a> </li> 
                 <li><a href="#" tabindex="2" aria-label="Navigate to About us">About us</a></li>
-                <li> 
+                <li aria-label="dropdown"> 
                     <a href="#" tabindex="3"  class="dropdown" aria-label="Navigate to Your career">Your career</a>
                     <ul class="dropdown-content" role="menu" aria-labelledby="menu1">
                         <li><a href="#" tabindex="4" aria-label="Navigate to Career Paths">Career Paths</a></li>
@@ -27,9 +27,9 @@
                 </li>
              </ul>
         </nav>     
-     <div class="Image">
+     <div class="Image" aria-label="Image and content division">
             <img src="perf_people.jpg" alt="perficient people" aria-label="people in perficient image" style="height:100%;width: 200%;">
-            <div id="div1">
+            <div id="div1" aria-label="content division">
                 <h1 id="perfTitle" aria-label="Perficient Title">Inclusive Progress</h1>
                 <h2 id="Content title" aria-label="Content Title">Voice is Heard</h2>
                 <p id="content" aria-label="content">We believe in developing a workforce that is as diverse and inclusive as the clients we work with. Together, we’re constantly pursuing progress, and we’re committed to actively listening, learning, and acting, to further advance our organization, our communities and our future leaders, always driving towards a diverse environment of inclusion and belonging.</p><br>
@@ -40,23 +40,22 @@
     </div>
     </header>
 <main>
-    <div class="container">
+    <div class="container" aria-label="Form division">
         <form action="index.html" class="form" id="form" aria-label="form">
-            <div class="header">
+            <div class="header" aria-label="Form heading">
                  <h2 aria-label="form heading">Product Request Form</h2>
             </div>
-            <div class="field">
-               <label for="title" class="required" aria-label="Enter your title"><b>Name</b></label>
+            <div class="field" aria-label="Title dropdown division">
+               <label for="title" class="required" aria-label="Enter your title(Mr. or Miss)"><b>Name</b></label>
                       <br>
                      <select name="title" id="title" tabindex="6">
                          <option value="">Title</option>
                          <option value="mr.">Mr.</option>
                          <option value="miss">Miss.</option>
                      </select>    
-                 
            </div> 
 
-           <div class="field">
+           <div class="field" aria-label="First name division">
                 <label for="fname" aria-label="Enter your First Name">First Name</label>
                      <input type="text" name="fname" class="text-input" id="fname" tabindex="7" placeholder="First" >
                      <span class="material-icons success tabindex="0">check_circle</span>
@@ -64,7 +63,7 @@
                  <small>Error Message</small>
            </div>
 
-           <div class="field">
+           <div class="field" aria-label="Last name division">
                 <label for="lname" aria-label="Enter your Last Name">Last Name</label>
                      <input type="text" name="lname"  class="text-input" id="lname" tabindex="8" placeholder="Last" ><br><br>
                      <span class="material-icons success tabindex="0">check_circle</span>                 
@@ -72,7 +71,7 @@
                  <small>Error Message</small>
            </div>
 
-           <div class="field"> 
+           <div class="field" aria-label="Email division"> 
                 <label for="email" class="required" aria-label="Enter your Email address"><b>Email address</b></label><br>
                      <input name="email" id="email" tabindex="9"><br><br>
                  
@@ -81,7 +80,7 @@
                  <small>Error Message</small>
            </div>
 
-           <div class="field">
+           <div class="field" aria-label="Phone number division">
                 <label for="phone" class="required" aria-label="Enter your Phone Number"><b>Phone Number</b></label>
                      <br>
                      <input type="tel" name="phone"  id="phone" maxlength="10" pattern="[6-9]{1}[0-9]{9}" tabindex="10" placeholder="Ex: 9861232320"><br>
@@ -91,7 +90,7 @@
                  <small>Error Message</small>
             </div>
 
-            <div class="field">
+            <div class="field" aria-label="Country dropdown division">
                 <label for="country" aria-label="Select your Country"><b>Country</b></label><br>
                      <select name="country" id="country" tabindex="11">
                          <option value="India">India</option>
@@ -107,7 +106,7 @@
                  <br><br>
             </div>     
 
-            <div class="field">
+            <div class="field" aria-label="Zipcode division">
                 <label for="zipcode" class="required" aria-label="Enter your Zipcode"><b>Zipcode</b></label>
                      <br>
                      <input type="text" name="zipcode" id="zipcode" maxlength="5" tabindex="12">
@@ -117,16 +116,16 @@
                  <small>Error Message</small><br><br>
              </div>
 
-             <div class="field">
-                <label for="comments" aria-label="Enter your Feedback or Inquiry"><b>Feedback/Inquiry</b></label>
+             <div class="field" aria-label="Feedback division">
+                <label for="comments" aria-label="label for your Feedback or Inquiry"><b>Feedback/Inquiry</b></label>
                      <br>
-                     <textarea name="comments" id="comments" cols="20" rows="4" tabindex="13" placeholder="please enter your comments"></textarea>
+                     <textarea name="comments" id="comments" cols="20" rows="4" tabindex="13" placeholder="please enter your comments" aria-label="textarea"></textarea>
                      <span class="material-icons success tabindex="0">check_circle</span>                 
                      <span class="material-icons error tabindex="0">error</span>
                      <small>Error Message</small><br><br>
              </div>
 
-             <div class="field">
+             <div class="field" aria-label="main division">
                 <input type="checkbox" name="terms" id="terms" tabindex="14" aria-labelledby="termsLabel">
                  <label for="terms" id="termsLabel" class="required" aria-label="Check for terms and conditions">I agree to terms and conditions</label>
                      <span class="material-icons success tabindex="0">check_circle</span>                 
@@ -142,9 +141,9 @@
     </main>
      <div>
      <footer>
-    <div class="foot">
+    <div class="foot" aria-label="Footer division">
         <img src="./perf_logo.png" alt="perficient Logo" aria-label="Perficient logo in footer">
-        <div id="footer1">
+        <div id="footer1" aria-label="Footer1 division">
             
             <ul>
                 <li><h3 id="gettoknowus" aria-label="Get to know us heading">GET TO KNOW US</h3></li>
@@ -157,7 +156,7 @@
                 <li><a href="#" aria-label="Navigate to Contact">Contact</a></li>
             </ul>     
         </div>
-        <div id="footer2">
+        <div id="footer2" aria-label="Footer2 division">
                 <ul>
                     <li><h3 id="Explore industries" aria-label="Explore industries heading">EXPLORE INDUSTRIES</h3>
                     </li>
@@ -168,7 +167,7 @@
                     <li><a href="#" aria-label="Navigate to Financial Services">Financial Services</a></li>
                 </ul>          
         </div>
-        <div id="footer3">
+        <div id="footer3" aria-label="Footer3 division">
             
                 <ul>
                     <li><h3 id="functions" aria-label="Functions heading">FUNCTIONS</h3></li>
@@ -180,7 +179,7 @@
         </div>
     </div>
 
-    <div id="items">
+    <div id="items" aria-label="Terms,policy division">
         <ul>
             <li><a href="#" aria-label="Navigate to Terms and conditions">Terms & conditions</a> </li> 
             <li><a href="#" aria-label="Navigate to Privacy policy">Privacy policy</a></li>
@@ -191,7 +190,7 @@
      </footer>
     </div>
 </div>
-<div class="popup" id="popup">
+<div class="popup" id="popup" aria-label="popup division">
     <img src="tickmark.png" role="img" alt="tickmark" id="tickmark" aria-label="tickmark image">
     <h2 id="popupTitle" aria-label="Popup Title">Thank you!</h2>
     <p aria-label="Popup Message">Successfully submitted the form.</p>
@@ -199,7 +198,7 @@
 </div>
 
 <script>
-    const form = document.getElementById("form")
+const form = document.getElementById("form")
 
 const formFields = form.querySelectorAll('input,select,textarea,button');
 
@@ -444,6 +443,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add focus and blur event listeners to toggle visibility
     CareerMenu.addEventListener('focus', function () {
         dropdownContent.style.display = 'block';
+        
     });
 
     //It will add the focus to the elements inside the dropdown

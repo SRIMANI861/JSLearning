@@ -63,13 +63,13 @@ li a:hover{
     display: block;
     text-align: left;
 }
-.dropdown-content  a:hover{
+.dropdown-content li a:hover{
     background-color: #ddd;
 }
-.dropdown:hover  .dropdown-content{
+.dropdown:hover li .dropdown-content{
     display: block;
 }
-.dropdown-content  a:focus{
+.dropdown-content li a:focus{
     outline: 2px solid black;
 }
 li:focus .dropdown-content{
